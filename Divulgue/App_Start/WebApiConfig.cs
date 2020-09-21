@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 
 namespace Divulgue
 {
@@ -10,7 +7,8 @@ namespace Divulgue
         public static void Register(HttpConfiguration config)
         {
             // Serviços e configuração da API da Web
-
+            config.EnableCors();
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             // Rotas da API da Web
             config.MapHttpAttributeRoutes();
 
