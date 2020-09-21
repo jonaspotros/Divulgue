@@ -96,6 +96,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Kernel\Entity.cs" />
+    <Compile Include="Kernel\Estado.cs" />
+    <Compile Include="Kernel\Municipio.cs" />
     <Compile Include="Kernel\Prefeitura.cs" />
     <Compile Include="Kernel\Usuario.cs" />
     <Compile Include="Persistence\DatabaseContext.cs" />

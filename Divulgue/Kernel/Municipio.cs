@@ -6,17 +6,13 @@ using System.Web;
 
 namespace Divulgue.Kernel
 {
-    public class Prefeitura:Entity
+    public class Municipio: Entity
     {
         public string nome { get; set; }
-
+        public int codigo_ibge { get; set; }
+        
         [ForeignKey("Estado")]
         public int estado_id { get; set; }
         public Estado Estado { get; set; }
-
-        [ForeignKey("Municipio")]
-        public int municipio_id { get; set; }
-        public Municipio Municipio { get; set; }
-
     }
 }

@@ -9,6 +9,8 @@ namespace Divulgue.Persistence
 {
     public class DatabaseContext: DbContext
     {
-        public DbSet<Usuario> usuarios { get; set; }
+        public DbSet<Estado> estados { get; set; }
+        public DbSet<Municipio> municipios { get; set; }
+
     }
 }
